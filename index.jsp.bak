@@ -1,0 +1,17 @@
+<%@ page language="java" pageENCODING="EUC-KR"%>
+<%@ page import="java.net.InetAddress" %>
+
+클라이언트ip <%=request.getRemoteAddr()%><br>
+요청URI <%=request.getRequestURI()%><br>
+컨텍스트경로 <%=request.getContextPath()%><br>
+서버이름 <%=request.getServerName()%><br>
+서버포트 <%=request.getServerPort()%><br>
+<br>
+requested URL: <%=request.getRequestURL()%><br>
+requested Info: <%=request.getRequestURI()%><br>
+
+<%
+InetAddress inet= InetAddress.getLocalHost();
+%>
+server ip: <%=inet.getHostAddress()%>
+
