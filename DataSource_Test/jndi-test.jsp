@@ -6,7 +6,7 @@
 
 
     Context ctx = new InitialContext();
-    DataSource ds = (DataSource)ctx.lookup("jdbc/nsmartapDB2DS");
+    DataSource ds = (DataSource)ctx.lookup("jdbc/JNDI1DB2DS");
  
     Connection conn = null;
     Statement stmt = null;
@@ -28,7 +28,7 @@
                 out.println("<BR />Instance Number for JVM DB Connection : "+r.getString("1"));
                 out.println("<BR />");
                 out.println("<hr />");
-                out.println("<BR />NOTE <BR /> -Server Node 0 : APSMARTP <BR /> -Server Node 1 : APCHNLP <BR /> -Server Node 2 : APBATCHP <BR /> -Server Node 3 : Standby");
+                out.println("<BR />NOTE <BR /> -Server Node 0 : AP1 <BR /> -Server Node 1 : AP2 <BR /> -Server Node 2 : AP3 <BR /> -Server Node 3 : Standby");
             }
                 
             // Clean up
